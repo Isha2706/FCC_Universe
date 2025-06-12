@@ -29,4 +29,24 @@ To restore the database from the provided dump file:
 1. Make sure PostgreSQL is installed on your system.
 2. Create a new database:
    ```bash
-   CREATE DATABASE <db_name>;
+   CREATE DATABASE universe;
+   ```
+3. Restore the dump into your database:
+   ```bash
+   psql -d universe -f universe.sql
+   ```
+
+## 🧾 Files Included
+
+- `universe.sql` – PostgreSQL database dump containing the entire schema and data
+
+## 📚 What I Learned
+
+- Basics of SQL and PostgreSQL
+- Writing queries to insert, update, and select data
+- Creating tables with relationships and constraints
+- Using `pg_dump` and `psql` for database backup and restore
+
+## ✅ Certification
+
+> This project fulfills the PostgreSQL/Relational Databases project requirements for the FreeCodeCamp certification.
